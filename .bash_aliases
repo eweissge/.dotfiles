@@ -1,0 +1,11 @@
+alias d='du -sh * | sort -h'
+alias ll='ls -lshart' 
+alias ipe='curl ipinfo.io/ip'
+alias pubip='curl ifconfig.io'
+alias c='clear'
+alias cpv='rsync -avhtP'
+alias dc='docker-compose -f'
+alias gl='git log --stat --graph'
+# Enable aliases to be sudo'ed
+alias sudo='sudo '
+alias untar='tar xvf'
