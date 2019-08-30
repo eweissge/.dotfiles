@@ -1,0 +1,10 @@
+#!/bin/bash
+pth=$HOME/.dotfiles
+for dotfile in .vimrc .profile .inputrc .bashrc .bash_logout .bash_aliases
+do
+	if [ -f $HOME/$dotfile ]; then
+		mv $HOME/$dotfile $HOME/$dotfile.$HOSTNAME
+	fi
+
+	ln -s $pth/$dotfile $HOME/$dotfile
+done
