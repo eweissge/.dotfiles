@@ -1,0 +1,21 @@
+#!/bin/bash
+
+packlist="atom-beautify
+atom-css-comb
+busy-signal
+color-picker
+emmet
+file-icons
+git-plus
+highlight-selected
+intentions
+javascript-snippets
+linter
+linter-ui-default
+minimap"
+
+
+for pack in $(cat ~/.atom.packages)
+do
+	apm install $pack;
+done
