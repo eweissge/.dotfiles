@@ -6,7 +6,7 @@ alias c='clear'
 alias cpv='rsync -avhtP'
 alias dc='docker-compose -f'
 alias trash='mv --force -t /home/eric/.Trash'
-alias gl='git log --stat --graph'
+alias gl='git log -p --stat --graph'
 #alias gl='git log -p --stat'
 # Enable aliases to be sudo'ed
 alias sudo='sudo '
