@@ -1,0 +1,13 @@
+#!/bin/bash
+
+hosts="mercury
+io
+newlab
+blackhole
+backup"
+
+for host in $hosts; 
+do
+	rsync -avhtP /home/eric/.secure $host:~/
+
+done
