@@ -1,6 +1,6 @@
 #!/bin/bash
 pth=$HOME/.dotfiles
-for dotfile in .vimrc .profile .inputrc .bashrc .bash_logout .bash_aliases
+for dotfile in .vimrc .profile .inputrc .bashrc .bash_logout .bash_aliases .gitconfig
 do
 	if [ -f $HOME/$dotfile ]; then
 		mv $HOME/$dotfile $HOME/$dotfile.$HOSTNAME
