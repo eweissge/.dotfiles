@@ -1,4 +1,5 @@
 #!/bin/bash
+cd
 pth=$HOME/.dotfiles
 for dotfile in .vimrc .profile .inputrc .bashrc .bash_logout .bash_aliases .gitconfig
 do
