@@ -1,8 +1,0 @@
-"*":
-  core:
-    autoHideMenuBar: true
-    telemetryConsent: "no"
-  "exception-reporting":
-    userId: "90edb462-e038-4be0-ac7f-0feaa64a44bb"
-  welcome:
-    showOnStartup: false
