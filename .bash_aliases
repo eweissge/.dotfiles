@@ -1,4 +1,4 @@
-alias d='du -sh * | sort -h'
+alias d='du -sch .[!.]* * | sort -h'
 alias ll='ls -lshart'
 alias ipe='curl ipinfo.io/ip'
 alias pubip='curl ifconfig.io'
