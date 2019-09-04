@@ -1,3 +1,9 @@
+# Set color for commands
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+# Custom Aliases
 alias d='du -sch .[!.]* * | sort -h'
 alias ll='ls -lshart'
 alias ipe='curl ipinfo.io/ip'
