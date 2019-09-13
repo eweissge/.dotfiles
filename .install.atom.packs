@@ -1,23 +1,37 @@
 #!/bin/bash
 
-packlist="atom-beautify
+packlist="atom-autocomplete-php
+atom-beautify
 atom-css-comb
+autocomplete-java
+autocomplete-php
+auto-close-html2
 busy-signal
+css-snippets
 color-picker
 emmet
 file-icons
-git-diff
 git-plus
 highlight-selected
 intentions
 javascript-snippets
+jquery-snippets
+language-nginx
+language-powershell
 linter
+linter-htmlhint
+linter-php
+linter-puppet
 linter-ui-default
+pigments
 split-diff
-minimap"
+minimap
+minimap-git-diff
+minimap-highlight-selected"
 
 
-for pack in $(cat ~/.atom.packages)
+#for pack in $(cat ~/.atom.packages)
+for pack in $packlist
 do
 	apm install $pack;
 done
