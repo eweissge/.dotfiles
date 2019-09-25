@@ -19,7 +19,7 @@ shopt -s cdspell
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
-HISTIGNORE="cd ..; ls; ll; cd; git status; docker ps;"
+HISTIGNORE="cd ..:ls:ll:cd:gs:gl:git status:docker ps;"
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.

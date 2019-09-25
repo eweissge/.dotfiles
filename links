@@ -10,9 +10,9 @@ do
 	ln -s $pth/$dotfile $HOME/$dotfile
 done
 
-if [ -d $HOME/.ssh ]; then
-	tar -cvzf ~/$HOSTNAME.ssh .ssh
-	rm -r ~/.ssh
-fi
+#if [ -d $HOME/.ssh ]; then
+#	tar -cvzf ~/$HOSTNAME.ssh .ssh
+#	rm -r ~/.ssh
+#fi
 
-ln -s ~/.secure/.ssh ~/.ssh
+#ln -s ~/.secure/.ssh ~/.ssh
