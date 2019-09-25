@@ -56,4 +56,24 @@ curl -I https://www.nytimes.com
 
 
 
+# Import existing GPG keys for git signing
+if [ ! -d /home/eric/.secure ]; then
+	echo "Directory with secure files doesn't exist";
+	exit 1;
+fi
+
+gpg
+/home/eric/.gnupg/pubring.kbx
+-----------------------------
+pub   rsa4096/8555B3787408B342 2019-07-23 [SC]
+      599634D7E44F33BFE0C614AC8555B3787408B342
+uid                 [ unknown] Eric Weissgerber (Github Signing Key) <eweissge@gmail.com>
+sub   rsa4096/0917653DCA387CBE 2019-07-23 [E]
+
+/home/eric/.gnupg/pubring.kbx
+-----------------------------
+sec   rsa4096/8555B3787408B342 2019-07-23 [SC]
+      599634D7E44F33BFE0C614AC8555B3787408B342
+uid                 [ unknown] Eric Weissgerber (Github Signing Key) <eweissge@gmail.com>
+ssb   rsa4096/0917653DCA387CBE 2019-07-23 [E]
 

@@ -1,18 +1,22 @@
 #!/bin/bash
 cd
 pth=$HOME/.dotfiles
+cd $pth;
 for dotfile in .vimrc .profile .inputrc .bashrc .bash_logout .bash_aliases .gitconfig
 do
 	if [ -f $HOME/$dotfile ]; then
 		mv $HOME/$dotfile $HOME/$dotfile.$HOSTNAME
 	fi
 
-	ln -s $pth/$dotfile $HOME/$dotfile
+	ln -s $pth/$dotfile .dotfiles/$dotfile
 done
 
+# Link ssh files
 #if [ -d $HOME/.ssh ]; then
 #	tar -cvzf ~/$HOSTNAME.ssh .ssh
 #	rm -r ~/.ssh
 #fi
 
 #ln -s ~/.secure/.ssh ~/.ssh
+
+
