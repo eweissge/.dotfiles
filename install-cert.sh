@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script is to install and trust the UWM self signed certficate to identify websites
+
 #certstore=/usr/local/share/ca-certificates
 cert=/home/eric/ca.crt
 certstore=/usr/share/ca-certificates
