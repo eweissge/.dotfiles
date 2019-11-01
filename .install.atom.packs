@@ -30,7 +30,30 @@ minimap-git-diff
 minimap-highlight-selected"
 
 
+# Check if atom is installed
+PKG_OK=$(dpkg-query -W --showformat='${Status}\n' atom | grep "install ok installed");
+echo "Checking for atom: $PKG_OK";
+if [ "" == "$PKG_OK" ]; then
+	# Add Atom repository
+	echo "Atom is not installed, installing ...";
+	echo "Adding Atom repository ...";
+#	add-apt-repository ppa:webupd8team/atom
+	wget -qO - http://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+	sudo sh -c 'echo "deb [arch=amd64] http://packagecloud.io/AtomEditor/atom/any/ stable main" > /etc/apt/sources.list.d/atom.list';
+
+	# Install Atom
+	apt update
+	apt install -y atom
+	exit 0;
+fi
+
+
+
+
 #for pack in $(cat ~/.atom.packages)
+# Turn off strict SSL
+sudo apm config set strict-ssl false
+
 for pack in $packlist
 do
 	apm install $pack;
