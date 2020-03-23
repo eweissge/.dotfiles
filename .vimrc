@@ -1,6 +1,6 @@
 execute pathogen#infect()
 syntax on
-filetype plugin indent on
+filetype plugin indent off
 color delek
 set hlsearch
 set ignorecase
