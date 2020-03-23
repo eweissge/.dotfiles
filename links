@@ -19,4 +19,9 @@ done
 
 #ln -s ~/.secure/.ssh ~/.ssh
 
+if [ -d $HOME/.vim ]; then
+	tar -cvzf ~/$HOSTNAME.vim.tgz .vim
+	rm -r ~/.vim
+fi
 
+ln -s ~/.dotfiles/.vim ~/.vim
