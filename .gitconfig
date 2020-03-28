@@ -2,5 +2,5 @@
 	email = eweissge@gmail.com
 	name = eweissge
 	signingkey = 8555B3787408B342
-#[commit]
-#	gpgsign = true
+[commit]
+	gpgsign = true
