@@ -5,6 +5,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 # Custom Aliases
 alias d='du -sch .[!.]* * | sort -h'
+alias diff='diff --color'
 alias ll='ls -lshart'
 alias ipe='curl ipinfo.io/ip'
 alias pubip='curl ifconfig.io'

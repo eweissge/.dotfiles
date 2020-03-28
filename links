@@ -25,3 +25,6 @@ if [ -d $HOME/.vim ]; then
 fi
 
 ln -s ~/.dotfiles/.vim ~/.vim
+
+# Need to ensure secure files are in place first
+gpg --import ~/.secure/.keys/eric.githubSigningKey.private
